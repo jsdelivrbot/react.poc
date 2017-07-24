@@ -1,4 +1,4 @@
-#How to start
+# How to start
 ```sh
 $ npm install
 $ npm start
@@ -11,7 +11,7 @@ $  yarn start
 
 
 
-##Criteria Met:
+## Criteria Met:
 
 * Loading data by calling FruitasticApi.get().
 * Creating a horizontal bar chart (no more than 400px wide) that shows how popular each fruit is compared to the others.
@@ -25,7 +25,7 @@ $  yarn start
 * No browser refresh, or navigate to another html page.
 
 
-##Stretch goals met:
+## Stretch goals met:
 
 - When a bar chart row is clicked, the list is filtered to only display the people that chose that fruit as their favorite.
 - ~~Create an animation where the bars grow to their correct width when the data is loaded.~~
