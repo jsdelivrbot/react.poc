@@ -1,0 +1,64 @@
+.fruits-component {
+  margin:0 auto;
+  width:400px;
+  .fruit-name {
+    text-transform: capitalize;
+  }
+  .fruits-header {
+    border-bottom: solid 1px #cccccc;
+    padding:25px;
+
+    @mixin random-color($selector) {
+      #{$selector}: unquote("rgba(#{random(256) - 1}, #{random(256)-1}, #{random(256 - 1)}, #{random(100)/100})");
+    }
+
+    @for $i from 0 to 10 {
+      .bg-color-#{$i} {
+        @include random-color('background-color');
+      }
+    }
+
+    .bar {
+      float: left;
+      width: 100%;
+      padding: 6px 0;
+      max-width: 400px;
+
+      .progress-track {
+        position: relative;
+        width: 100%;
+        height: 20px;
+        background: #ebebeb;
+
+        .progress-fill {
+
+          position: relative;
+          height: 20px;
+          color: #fff;
+          text-align: center;
+          font-family: "Lato", "Verdana", sans-serif;
+          font-size: 12px;
+          line-height: 20px;
+        }
+      }
+    }
+
+
+    .bar-text {
+      line-height: 30px;
+    }
+  }
+  .fruits-content {
+    padding:25px;
+    .person-row {
+      padding: 10px 0;
+      border-bottom: solid 1px #efefef;
+    }
+  }
+
+}
+
+a{
+  cursor:pointer
+}
+
